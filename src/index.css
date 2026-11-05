@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+@theme{
+  --font-public-sans: "Public Sans", sans-serif;
+  --font-edu: "Edu NSW ACT Hand Pre", cursive;
+}
+
+.revealer{
+  animation-name: reveal;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes reveal {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(100%);
+  }
+}
